@@ -1,0 +1,88 @@
+header {
+  display: none;
+}
+
+body {
+  background: var(--jw);
+  font-family: var(--jwf);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+img {
+  width: 33%;
+}
+
+.login {
+  font-size: 2rem;
+  width: 50vw;
+  text-align: left;
+  margin-left: 125px;
+  color: #fff;
+}
+
+#email,
+#jw_password {
+  width: 400px;
+  font-size: 1.8rem;
+  height: 30px;
+  margin-left: 30px;
+}
+
+input[type="submit"] {
+  font-size: 30px;
+  margin-top: 50px;
+  padding: 10px;
+}
+
+@media (max-width:1025px) {
+  main {
+    display: block;
+    margin: auto;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .login {
+    width: 100%;
+    margin: 0;
+    margin-top: 30vw;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .login table tr {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  #email,
+  #jw_password {
+    width: 85%;
+    height: 40px;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 30px;
+  }
+
+  input[type="submit"] {
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 2rem;
+    border-radius: 80%;
+  }
+}

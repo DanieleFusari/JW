@@ -1,0 +1,8 @@
+.h1 {
+    text-align: center;
+    font-family: var(--jwf);
+    color: var(--jw);
+    margin-top: 30px;
+    text-decoration: underline;
+    font-size: 1.3rem;
+}

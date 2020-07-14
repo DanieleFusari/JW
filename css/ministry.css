@@ -1,0 +1,136 @@
+main {
+  text-align: center;
+  color: var(--jw);
+  font-family: var(--jwf);
+}
+
+.details {
+  width: 95%;
+  margin: auto;
+}
+
+.tabelEnter {
+  width: 99%;
+  margin: auto;
+}
+
+.tabelEnter label {
+  margin-left: 5px;
+}
+
+.tabelEnter input {
+  width: 96%;
+  text-align: center;
+}
+
+.tabelEnter th,
+.tabelEnter td {
+  border: 1px solid lightblue;
+  text-align: left;
+}
+
+#buttonEnter,
+#buttonEnteSearch,
+.delete input[type="submit"] {
+  margin: 20px 0;
+  width: 130px;
+  height: 40px;
+  background: linear-gradient(to bottom, orange 0%,#389ed5 100%);
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  border-bottom: 4px solid #2b8bc6;
+  color: #fbfbfb;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+  font-size: 15px;
+  text-indent: 5px;
+  box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
+  cursor: pointer;
+}
+
+#buttonEnteSearch {
+  background: linear-gradient(to bottom, pink 0%, #389ed5  100%);
+}
+
+.tabelDisplay {
+  margin: 30px auto;
+  width: 98%;
+  text-align: center;
+  border-spacing: 0px;
+  background: green;
+  border: solid 1px #000;
+}
+
+.rowDesktop{
+  display: none;
+}
+
+.tabelDisplay th  {
+  background: var(--jw);
+  color: #fff;
+  border-left: solid 1px #000;
+  border-bottom: solid 1px #fff;
+}
+
+.tabelDisplay td  {
+  border-left: solid .8px #000;
+  color: #2E4053;
+}
+
+.tabelDisplay th:nth-child(1),
+.tabelDisplay td:nth-child(1)  {
+  border-left: none;
+}
+
+.tabelDisplay tr:nth-child(even) {
+  background: #eee4f2;
+}
+
+.tabelDisplay tr:nth-child(odd) {
+  background: #e4ebf2;
+}
+
+.delete {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+.delete input {
+  width: 70%;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.delete input[type="submit"]{
+  background: linear-gradient(to bottom, red 0%, #389ed5  100%);
+}
+
+
+@media (min-width:800px) {
+  main {
+    width: 55%;
+    margin: auto;
+  }
+
+  .tabelEnter {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+
+  .tabelEnter label[for="dateFrom"],
+  .tabelEnter label[for="dateTo"] {
+    margin-left: 40px;
+  }
+
+  .rowDesktop{
+    display: table-row;
+  }
+  .rowMobile{
+    display: none;
+  }
+}

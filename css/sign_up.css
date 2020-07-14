@@ -1,0 +1,130 @@
+h2,
+h3 {
+  text-align: center;
+  text-decoration: underline;
+  color: var(--jw);
+  font-family: var(--jwf);
+  margin: 30px;
+}
+
+#create_account table,
+.search {
+  width: 90%;
+  margin: auto;
+  text-align: left;
+  font-family: var(--jwf);
+}
+
+#create_account input,
+#create_account select {
+  width: 90%;
+  margin: 5px 0;
+  margin-left: 10px;
+}
+
+#create_account input[type='submit'] {
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  width: 90%;
+}
+
+#amend_accounts table{
+  width: 95%;
+  margin: 30px auto;
+}
+
+#amend_accounts td,
+#amend_accounts th {
+  border: solid 1px #000;
+  margin: 0;
+  text-align: center;
+  font-family: var(--jwf);
+}
+
+#amend_accounts tr:nth-child(odd){
+  background-color: lightgray;
+}
+
+#amend_accounts tr:nth-child(even){
+  background-color: lightyellow;
+}
+
+#amend_accounts th {
+  background-color: var(--jw);
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.lay {
+  display: flex;
+  flex-direction: column;
+}
+
+.name,
+.email,
+select {
+    text-align: center;
+    width: 80%;
+    margin: 5px 0;
+    font-size: 1.3rem;
+}
+
+#amend_accounts input[name='s_a'] {
+  background-color: red;
+  color: #fff;
+  font-size: 1.4rem;
+  width: 90%;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+#amend_accounts input[name='s_a']:nth-child(odd) {
+  background-color: green;
+}
+
+#amend_accounts input[name='s_a']:nth-child(3) {
+  background-color: lightgray;
+}
+
+@media (min-width:800px) {
+  h2,
+  h3 {
+    font-size: 2rem;
+  }
+
+  #create_account table,
+  .search {
+    width: 30%;
+    font-size: 1.5rem;
+  }
+
+  #create_account input[type='submit'] {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    width: 10%;
+  }
+
+  #amend_accounts table{
+    width: 75%;
+    margin: 30px auto;
+    font-size: 1.5rem;
+  }
+
+  .search {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .lay {
+    display: table-row;
+  }
+
+  .name,
+  .email,
+  select option {
+      text-align: center;
+      width: 80%;
+  }
+}

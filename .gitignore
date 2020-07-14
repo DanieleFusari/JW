@@ -1,0 +1,12 @@
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+*.db
+.env
+vendor
+node_modules
+uploads
+img
+test*

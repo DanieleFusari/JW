@@ -1,0 +1,61 @@
+:root {
+  --jw: #4b6da7;
+  --jwf: 'Open Sans', sans-serif;
+}
+
+header {
+  margin: 0;
+  background: var(--jw);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: var(--jwf);
+
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a:hover p {
+  color: lightgray;
+}
+
+header a p {
+  margin: 10px;
+  padding:  10px;
+  display: inline;
+  color: #fff;
+  font-size: 30px;
+}
+
+.nav {
+  text-align: right;
+}
+
+.hi {
+  margin: auto;
+  text-align: left;
+}
+
+.hi a{
+  color: #fff;
+  font-family: var(--jwf);
+}
+
+@media (min-width:1025px) {
+
+  header {
+    justify-content: flex-end;
+  }
+
+  header a p {
+    font-size: 40px;
+  }
+
+  .hi {
+    margin: 0 auto 0 100px;
+  }
+
+
+}
